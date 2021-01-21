@@ -1,0 +1,2 @@
+<h1>{{chosenPost?.id}}{{chosenPost?.title}}</h1>
+<app-post *ngFor="let p of posts" [post]="p" (eventEmitter)="takeChosenPost($event)"></app-post>
